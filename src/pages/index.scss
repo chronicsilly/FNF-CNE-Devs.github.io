@@ -1,5 +1,36 @@
 @use "sass:color";
 
+:root {
+    --discord-dnd: hsl(358.16 calc(1*68.776%)53.529% /1);
+    --discord-idle: hsl(37.792 calc(1*78.571%)38.431% /1);
+    --discord-online: hsl(142.703 calc(1*60.656%)35.882% /1);
+}
+
+.discordWidget-user {
+    //.username {
+    //    text-overflow: ellipsis;
+    //    white-space: nowrap;
+    //    overflow: hidden;
+    //}
+
+    .avatar {
+        margin-right: 8px;
+        border: solid white 2px;
+
+        &[data-status="online"] {
+            border-color: var(--discord-online);
+        }
+
+        &[data-status="idle"] {
+            border-color: var(--discord-idle);
+        }
+
+        &[data-status="dnd"] {
+            border-color: var(--discord-dnd);
+        }
+    }
+}
+
 .content {
     margin: 0;
     padding: 0!important;
