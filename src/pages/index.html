@@ -223,6 +223,8 @@
 				const avatar = document.createElement("img");
 				avatar.classList.add("avatar");
 				avatar.src = member.avatar_url + "?size=16";
+				avatar.width = 16;
+				avatar.height = 16;
 				avatar.setAttribute("data-status", member.status);
 				user.appendChild(avatar);
 
