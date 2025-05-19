@@ -32,8 +32,9 @@ a {
 }
 
 footer {
+  max-width: 100%;
   background: var(--background-secondary-color);
-  padding: 1em 15em;
+  padding: 1em 15vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -45,6 +46,8 @@ footer {
     display: flex;
     flex-direction: row;
     align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   p {
@@ -68,6 +71,7 @@ footer {
       border-radius: 999em;
     }
   }
+
   a:has(img) {
     padding: 10px 7.5px;
   }
@@ -327,7 +331,7 @@ header {
   .desktop {
     display: none;
   }
-  
+
   header {
     >h2 {
       display: none;
