@@ -237,6 +237,7 @@ div.compact {
 
     a {
         text-decoration: none;
+        position: initial;
     }
 
     &:hover {
@@ -332,8 +333,8 @@ div.compact {
 
     .last-updated {
         position: absolute;
-        bottom: 10px;
         left: 10px;
+        bottom: 10px;
     }
 
     h3 {
