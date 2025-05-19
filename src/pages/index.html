@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>{{ pageTitle }} - Codename Engine Docs</title>
 	<link rel="stylesheet" href="root/style.css">
+	<link rel="stylesheet" href="root/style_v2.css">
 	<link rel="stylesheet" href="root/index.css">
 
 	<meta name="keywords" content="codename engine, codename, engine, game, modding, mods, website, documentation, wiki, tools, tool, codenameengine, cne, funkin, fnf, fnf engine, fnf engines, friday night funkin, gamebanana fnf" />
@@ -96,19 +97,6 @@
 						<i>You can contribute to this website by going to the <i class="fa fa-github"></i> <a href="https://github.com/CodenameCrew/codename-website">Website&nbsp;repository</a></i>
 						<br>
 						<i>You can find the engine source by going to the <i class="fa fa-github"></i> <a href="https://github.com/CodenameCrew/CodenameEngine">Engine&nbsp;repository</a></i>
-					</div>
-				</div>
-
-				<div class="discordWidget">
-					<div class="discordWidget-header">
-						<h2 style="text-align: center; margin: 0; transform: translateY(50%);">Discord Server</h2>
-					</div>
-					<div class="discordWidget-content">
-						<span>Members online</span>
-					</div>
-					<div class="discordWidget-footer">
-						<span>Want to chat?</span>
-						<a style="margin-left: 35px;" href="#" class="default-button">Join Server</a>
 					</div>
 				</div>
 			</div>
@@ -210,47 +198,9 @@
 			<script src="root/featuredMods.js"></script>
 		</div>
 	</div>
-
-	<script>
-		const widgetContent = document.querySelector(".discordWidget-content");
-		const widgetFooter = document.querySelector(".discordWidget-footer");
-		fetch("https://discord.com/api/guilds/860561967383445535/widget.json").then(response => response.json()).then(data => {
-			widgetFooter.querySelector("a").href = data.instant_invite;
-			for (const member of data.members) {
-				const user = document.createElement("div");
-				user.classList.add("discordWidget-user");
-
-				const avatar = document.createElement("img");
-				avatar.classList.add("avatar");
-				avatar.src = member.avatar_url + "?size=16";
-				avatar.width = 16;
-				avatar.height = 16;
-				avatar.setAttribute("data-status", member.status);
-				user.appendChild(avatar);
-
-				const username = document.createElement("span");
-				username.classList.add("username");
-				username.innerText = member.username;
-				user.appendChild(username);
-
-				widgetContent.appendChild(user);
-			}
-		})
-
-		function syncHeights() {
-			const main = document.querySelector('.main-content');
-			const discord = document.querySelector('.discordWidget');
-			if (main && discord) {
-				discord.style.height = `${main.offsetHeight}px`;
-				const mainStyles = window.getComputedStyle(main);
-				discord.style.marginTop = mainStyles.marginTop;
-			}
-		}
-
-		window.addEventListener('load', syncHeights);
-		window.addEventListener('DOMContentLoaded', syncHeights);
-		window.addEventListener('resize', syncHeights);
-	</script>
+	<div class="footer">
+		{{{ parse footer }}}
+	</div>
 
 	<script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
 	<script>
