@@ -37,9 +37,11 @@ header {
 	background: none;
 	z-index: 0;
 	position: relative;
+	pointer-events: none;
 	* {
 		position: relative;
 		z-index: 1;
+		pointer-events: auto;
 	}
 	&::before {
 		content: " ";
@@ -58,6 +60,7 @@ header {
 		padding: 19px;
 		box-sizing: border-box;
 		z-index: -1;
+		pointer-events: none;
 	}
 	&::after {
 		content: " ";
@@ -76,6 +79,7 @@ header {
 		mask: linear-gradient(#fff 0 0) content-box,
     linear-gradient(#fff 0 0) border-box;
 		mask-composite: exclude;
+		pointer-events: none;
 	}
 }
 
