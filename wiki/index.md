@@ -17,7 +17,7 @@ Credits:
 - Frakits - useless documentation and tons of styling.
 - Nex_isDumb - other documentations, keeping the api up to date (mostly) plus few other stuff.
 - swordcube - helping hand for documentation.
-- Care or usb_port_2 - helped with keeping my sanity.
+- Care or _chronicsilly - helped with keeping my sanity.
 
 If you wanna see who made a specific page check below at the bottom of the page above the comments.
 
