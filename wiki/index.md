@@ -1,5 +1,5 @@
 ---
-author: Frakits & Ne_Eo
+author: Frakits & [LOSER]
 desc: Main Page to the Wiki
 title: Home
 lastUpdated: 2024-10-12T18:34:34.185Z
@@ -13,7 +13,7 @@ Here is documentation on functions of the engine (gameplay and modding), and how
 
 
 Credits:
-- Ne_Eo - some styling and basically making the entire structure of the website.
+- [LOSER] - some styling and basically making the entire structure of the website.
 - Frakits - useless documentation and tons of styling.
 - Nex_isDumb - other documentations, keeping the api up to date (mostly) plus few other stuff.
 - swordcube - helping hand for documentation.
